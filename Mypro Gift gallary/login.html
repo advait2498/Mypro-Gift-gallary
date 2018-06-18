@@ -1,0 +1,162 @@
+
+!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+		form
+		</title>
+<!DOCTYPE html>
+<title>Gift Gallary</title>
+<head>
+<style>
+div
+{
+height:80;
+width:60;
+
+}
+h1
+{ 
+  font-family:cooper;
+   font-size:72;
+   text-align:center;
+}
+body
+{ 
+background-color:thistle;
+  /*background-image:ur("b.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;*/
+}
+
+img
+{
+  image-position:center;
+}
+h2
+{
+ color:white;
+}
+input
+{
+  float:center;
+}
+button
+{
+  float:right;
+} 
+
+td {
+    text-align: center;
+     color: white;
+
+}
+table {
+    font-family:georia;
+    
+    width: 100%;
+																																									
+}
+</style>
+</head>
+<body>
+
+<img src="gift.png" alt="gift" width="100%" height="300" ></img>
+<table bgcolor="#FFCCFF">
+<tr>
+<td><h2><a href="homepage.html"><b>Home</b></h2></a></td>
+ <td><h2><a href="login.html"><b>login</b></h2></a></td> 
+<td><h2><a href="contact.html"><b>Contact</b></h2></a></td> 
+<td><h2><a href="about.html"><b>About Us</b></h2></a></td> </tr>
+</table>
+	<script>
+	
+		function validateForm()
+		{
+			var Fname=document.getElementById("Fname");
+			if(Fname.value=="")
+			{
+				alert("Please Enter First Name");
+				
+			}
+			 
+    		var Phone = document.getElementById("Phone");
+    		if (Phone.value == "") 
+		{
+			alert("Please Enter Mobile No");
+        
+       		}
+		var Lname = document.getElementById("Lname")
+		
+			if(Lname.value == "")
+			{
+				alert("Please Enter Last Name");
+			}
+ 		var Gender = document.getElementById("Gender");
+		
+			if(Gender.value == "")
+			{
+				
+				alert("Please Select Appropreate Gender Value");
+			} 	
+		}
+		
+	</script>
+					
+	
+	<center>
+		<form onsubmit="validateForm()" name="asd" ><font size="5" color="purple">
+		
+		<center><h3>Registration Form</h3></center>
+		<fieldset>
+		<legend>Personal information</legend>		
+		
+		<br>
+		<b>First name: </b><input type="text" Id="Fname" >
+		<br>
+		<br>
+		<b>Last name:</b><input type="text" ID="Lname" >
+		<br><br>
+		<b>Gender:</b> <input type="radio" ID="Gender" value="male" >Male
+		               <input type="radio" ID="Gender" value="female" >Female
+		<br><br>
+		
+		
+		<br><br>
+		<b>Date of birth:</b><input type="date" ID="dob" >
+		
+		</fieldset>
+		<fieldset>
+		<legend>Contact information</legend>
+		<b>Phone number:</b><input type="text" ID="Phone"  >
+		<br><br>
+		 <b>email:</b><input type="email">
+		<br><br>
+		<b><p>Address:</p></b><textarea style="border-radius:5px">
+		</textarea>
+		<br>
+		<input type="checkbox" > By This Your Agree With Our Terms And Conditions 
+		</fieldset>
+		<fieldset>
+		<input type="submit">        <input type="Reset">
+		</fieldset>
+</font>
+		</form>
+		<fieldset>
+		<p id="e">
+		</p>
+		<br>
+		<p id="e1">
+		</p>
+		<br>
+		<p id="e3">
+		</p>	
+		<br>
+		<p id="e4">
+		</p>
+		<br>
+		</fieldset>
+		
+		</center>
+</body>
